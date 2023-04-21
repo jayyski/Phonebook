@@ -88,6 +88,10 @@
         <div class="alert alert-success">
             {{ 'Contact created successfully' }}
         </div>
+    @elseif (session('message') == 'updated')
+        <div class="alert alert-success">
+            {{ 'Contact updated successfully' }}
+        </div>
     @endif
 
     <form action="/create" method="post">
@@ -132,7 +136,7 @@
         <tbody>
             @foreach ($users as $user)
                 <tr>
-                    <td>{{ $user->name }}</td>
+                    <td><a href='/edit/{{ $user->id }}'>{{ $user->name }}</a></td>
                     <td>{{ $user->phone }}</td>
                     <td>{{ $user->email }}</td>
                     <form action="/delete/{{ $user->id }}" method="post">
