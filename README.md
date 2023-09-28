@@ -14,4 +14,4 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## About Application
 
-This is a phonebook application, it allows users to create, save, and delete multiple users information. It is also connected to a sql database where this information is stored and validated for duplicates.
+This is a phonebook application, it allows users to create, save, and delete multiple users information. It is also connected to a sql database where this information is stored and validated for duplicates. It is also connected to a mailserver and allows the user to send custom email messages to users already created.
